@@ -64,7 +64,8 @@ var space = {
   20: "5rem",
   40: "10rem",
   64: "16rem",
-  80: "20rem"
+  80: "20rem",
+  160: "40rem"
 };
 
 // src/radii.ts
