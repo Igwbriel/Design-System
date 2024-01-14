@@ -1,12 +1,34 @@
-import { colors } from '@ignite-ui/tokens'
 import { styled } from './styles'
+import { ComponentProps } from 'react'
 
-const Button = styled('button', {
+export const Button = styled('button', {
   fontFamily: '$default',
-  backgroundColor: '$ignite500',
+  backgroundColor: '$ignite300',
   borderRadius: '$md',
+  border: 0,
+  fontWeight: 'bold',
+  color: '$white',
+
+  variants: {
+    size: {
+      small: {
+        fontSize: 14,
+        padding: '$2 $4',
+      },
+      big: {
+        fontSize: 16,
+        padding: '$3 $6',
+      },
+    },
+  },
+
+  '&:hover': {
+    backgroundColor: '$ignite500',
+  },
+
+  defaultVariants: {
+    size: 'small',
+  },
 })
 
-export function App() {
-  return <button>Hello World</button>
-}
+export type ButtonProps = ComponentProps<typeof Button>
