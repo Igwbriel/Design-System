@@ -75,7 +75,6 @@ declare const Button: _stitches_react_types_styled_component.StyledComponent<"bu
         40: string;
         64: string;
         80: string;
-        160: string;
     };
 }, {
     height: "space";

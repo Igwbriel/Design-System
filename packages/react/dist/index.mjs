@@ -20,11 +20,11 @@ var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
 
 // ../tokens/dist/index.mjs
 var colors = {
-  white: "FFFFFF",
-  black: "000000",
+  white: "#FFFFFF",
+  black: "#000000",
   gray100: "#E1E1E6",
   gray200: "#A9A9B2",
-  gray400: "#7C7CBA",
+  gray400: "#7C7C8A",
   gray500: "#505059",
   gray600: "#323238",
   gray700: "#29292E",
@@ -50,8 +50,7 @@ var space = {
   20: "5rem",
   40: "10rem",
   64: "16rem",
-  80: "20rem",
-  160: "40rem"
+  80: "20rem"
 };
 var radii = {
   px: "1px",
