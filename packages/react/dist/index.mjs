@@ -215,9 +215,82 @@ function Avatar2(props) {
     /* @__PURE__ */ jsx(AvatarFallback, { delayMs: 600, children: /* @__PURE__ */ jsx(User, {}) })
   ] });
 }
+
+// src/components/Button.tsx
+var Button = styled("button", {
+  all: "unset",
+  borderRadius: "$sm",
+  fontSize: "$sm",
+  fontWeight: "$medium",
+  fontFamily: "$default",
+  textAlign: "center",
+  maxWidth: 120,
+  boxSizing: "border-box",
+  padding: "0 $4",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "$2",
+  cursor: "pointer",
+  svg: {
+    width: "$4",
+    height: "$4"
+  },
+  "&:disabled": {
+    cursor: "not-allowed"
+  },
+  variants: {
+    variant: {
+      primary: {
+        color: "White",
+        background: "$ignite500",
+        "&:not(disabled):hover": {
+          background: "$ignite300"
+        },
+        "&:disabled": {
+          background: "$gray200"
+        }
+      },
+      secundary: {
+        color: "$ignite300",
+        border: "2px solid $ignite500",
+        "&:not(disabled):hover": {
+          background: "$ignite500",
+          color: "$white"
+        },
+        "&:disabled": {
+          color: "$gray200",
+          borderColor: "$gray200"
+        }
+      },
+      tertiary: {
+        color: "$gray100"
+      },
+      "&:not(disabled):hover": {
+        color: "$White"
+      },
+      "&:disabled": {
+        color: "$gray600"
+      }
+    },
+    size: {
+      sm: {
+        height: 38
+      },
+      md: {
+        height: 46
+      }
+    }
+  },
+  defaultVariants: {
+    variant: "primary",
+    size: "md"
+  }
+});
 export {
   Avatar2 as Avatar,
   Box,
+  Button,
   Heading,
   Text
 };
