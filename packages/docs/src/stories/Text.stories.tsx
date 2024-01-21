@@ -8,6 +8,7 @@ export default {
     children:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laborum nesciunt sequi perferendis nam hic vel, natus, officia aut amet unde quo enim doloremque quisquam obcaecati placeat quaerat ratione dolorem?',
   },
+  tags: ['autodocs'],
 } as Meta<TextProps>
 
 export const Primary: StoryObj<TextProps> = {}
