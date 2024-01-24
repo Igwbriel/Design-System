@@ -8,6 +8,11 @@ export default {
   args: {
     children: 'send',
   },
+  argTypes: {
+    onClick: {
+      action: 'Click',
+    },
+  },
   tags: ['autodocs'],
 } as Meta<ButtonProps>
 
