@@ -838,7 +838,7 @@ declare namespace Avatar {
 }
 
 declare const Button: _stitches_react_types_styled_component.StyledComponent<"button", {
-    variant?: "&:disabled" | "primary" | "secundary" | "tertiary" | "&:not(disabled):hover" | undefined;
+    variant?: "&:disabled" | "primary" | "secondary" | "tertiary" | "&:not(disabled):hover" | undefined;
     size?: "sm" | "md" | undefined;
 }, {}, _stitches_react_types_css_util.CSS<{}, {
     colors: {
@@ -1253,6 +1253,9 @@ interface TextInputProps extends ComponentProps<typeof Input> {
     prefix?: string;
 }
 declare function TextInput({ prefix, ...props }: TextInputProps): react_jsx_runtime.JSX.Element;
+declare namespace TextInput {
+    var displayName: string;
+}
 
 declare const TextArea: _stitches_react_types_styled_component.StyledComponent<"textarea", {}, {}, _stitches_react_types_css_util.CSS<{}, {
     colors: {

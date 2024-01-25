@@ -5,10 +5,19 @@ export default {
   title: 'Typegraph/Heading',
   component: Heading,
   args: {
+    size: 'md',
     children: 'Custom title',
-  } as Meta<HeadingProps>,
+  },
+  argTypes: {
+    size: {
+      options: ['sm', 'md', 'lg', '2xl', '4xl', '5xl', '6xl'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+  },
   tags: ['autodocs'],
-}
+} as Meta<HeadingProps>
 export const Primary: StoryObj<HeadingProps> = {}
 
 export const CustomTag: StoryObj<HeadingProps> = {

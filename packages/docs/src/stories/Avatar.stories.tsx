@@ -8,6 +8,13 @@ export default {
     src: 'https://github.com/igwbriel.png',
     alt: 'Gabriel Dias',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
   tags: ['autodocs'],
 } as Meta<AvatarProps>
 

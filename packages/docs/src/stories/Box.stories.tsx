@@ -7,6 +7,13 @@ export default {
   args: {
     children: <Text> testando </Text>,
   },
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
+  },
   tags: ['autodocs'],
 } as Meta<BoxProps>
 

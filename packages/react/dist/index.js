@@ -308,7 +308,7 @@ var Button = styled("button", {
           background: "$gray200"
         }
       },
-      secundary: {
+      secondary: {
         color: "$ignite300",
         border: "2px solid $ignite500",
         "&:not(disabled):hover": {
@@ -397,6 +397,7 @@ function TextInput(_a) {
     /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Input, __spreadValues({}, props))
   ] });
 }
+TextInput.displayName = "TextInput";
 
 // src/components/TextArea.tsx
 var TextArea = styled("textarea", {
