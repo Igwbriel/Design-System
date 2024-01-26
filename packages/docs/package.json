@@ -29,7 +29,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "prop-types": "^15.8.1",
     "storybook": "^7.6.8",
-    "vite": "^5.0.11"
+    "vite": "^5.0.12"
   },
   "dependencies": {
     "@ignite-ui/eslint-config": "*",
