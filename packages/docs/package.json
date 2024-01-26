@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "storybook dev -p 6006",
+    "deploy-storybook": "storybook-to-ghpages",
     "build": "storybook build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -22,6 +23,7 @@
     "@storybook/blocks": "^7.6.8",
     "@storybook/react": "^7.6.7",
     "@storybook/react-vite": "^7.6.7",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/test": "^7.6.8",
     "@storybook/theming": "^7.6.8",
     "@vitejs/plugin-react": "^4.2.1",
